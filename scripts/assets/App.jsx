@@ -358,7 +358,7 @@ const memberList = useMemo(() => {
   // Render mint nft screen.
   return (
     <div className="mint-nft">
-      <h1 className='mint'>Mint your free 🍪DAO Membership NFT</h1>
+      <h1 className='mint'>Mint your free DAO Membership NFT</h1>
       <button
         disabled={isClaiming}
         onClick={mintNft}
