@@ -44,7 +44,7 @@ const token = sdk.getToken("0x28F1974F0e5b28157f1B8b95Ba829dB2D34986Ef");
   try {
     const amount = 6_900;
     const description = "Should the DAO transfer " + amount + " tokens from the treasury to " +
-      process.env.WALLET_ADDRESS + " give street dogs medical care?";
+      process.env.WALLET_ADDRESS + " in order to give street dogs medical care?";
     const executions = [
       {
         nativeTokenValue: 0,
