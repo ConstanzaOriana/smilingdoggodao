@@ -42,16 +42,13 @@ const token = sdk.getToken("0x28F1974F0e5b28157f1B8b95Ba829dB2D34986Ef");
   }
 
   try {
-    // Create proposal to transfer ourselves 6,900 tokens for being awesome.
     const amount = 6_900;
     const description = "Should the DAO transfer " + amount + " tokens from the treasury to " +
-      process.env.WALLET_ADDRESS + " for being awesome?";
+      process.env.WALLET_ADDRESS + " to give street dogs medical care?";
     const executions = [
       {
-        // Again, we're sending ourselves 0 ETH. Just sending our own token.
         nativeTokenValue: 0,
         transactionData: token.encoder.encode(
-          // We're doing a transfer from the treasury to our wallet.
           "transfer",
           [
             process.env.WALLET_ADDRESS,
